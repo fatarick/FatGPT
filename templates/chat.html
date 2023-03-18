@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)https://www.pythonanywhere.com/user/fatarick/files/home/fatarick/templates/chat.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>FatGPT</title>
+  <style>
+    /* Define black theme styles */
+    body {
+      background-color: #434f5e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 0;
+    }
+    #header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 50px;
+      padding-left: 10px;
+      background-color: #2e3742;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    #header h2 {
+      margin: 0;
+    }
+    #chatbox-container {
+      position: absolute;
+      top: 50px;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+    #chatbox {
+      width: 90%;
+      height: 90%;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      overflow: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    #chatbox p {
+      margin: 0;
+      padding: 5px;
+      text-align: justify;
+    }
+    #input-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #2e3742;
+    }
+    #input {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #input input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+    #input input[type="submit"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #111;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h2>FatGPT</h2>
+  </div>
+  <div id="chatbox-container">
+    <div id="chatbox">
+      {% if prompt %}
+      <p><strong>You:</strong> {{ prompt }}</p>
+      {% endif %}
+      {% if answer %}
+      <p><strong>Bot:</strong> {{ answer }}</p>
+      {% endif %}
+    </div>
+  </div>
+  <div id="input-container">
+    <form method="post" id="input">
+      <input type="text" name="request" placeholder="Enter a request...">
+      <input type="submit" value="Send">
+    </form>
+  </div>
+
+
+
+<div style="background-color: rgb(255, 143, 0); display: none; color: white; text-align: center; position: fixed; top: 0px; left: 0px; width: 100%; height: auto; min-width: 100%; min-height: auto; max-width: 100%; font: 12px &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif; cursor: pointer; padding: 5px;"><span style="color: white; font: 12px &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif;">Вы отключили плеер абзацев. Вы можете включить его снова во вкладке параметры.</span><img src="chrome-extension://gfjopfpjmkcfgjpogepmdjmcnihfpokn/img/icons/icon-close_16.png" style="width: 20px; height: auto; min-width: 20px; min-height: auto; max-width: 20px; float: right; margin-right: 10px;"></div></body></html>
