@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 app = Flask(__name__)
 
 # Initialize the natural language processing model
-openai.api_key = "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"
+openai.api_key = "#OPENAI API CODE"
 model_engine = "text-davinci-003"
 
 @app.route('/', methods=['GET', 'POST'])
