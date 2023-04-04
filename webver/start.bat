@@ -1,2 +1,1 @@
-color a
-python ccgwib.py
+python ccgwi.py
