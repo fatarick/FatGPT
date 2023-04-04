@@ -6,7 +6,7 @@ from pywebio.session import set_env
 import openai
 
 # Initialize the natural language processing model
-openai.api_key = "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"
+openai.api_key = "#OPENAI API CODE"
 model_engine = "text-davinci-003"
 
 def chat():
