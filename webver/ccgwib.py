@@ -11,8 +11,8 @@ model_engine = "text-davinci-003"
 
 def chat():
     popup("Big update of interface", put_text('Big update of UI. From flask to pywebio.'))
-    set_env(title="FatGpt")
-    put_markdown('## FatGPT')
+    set_env(title="FatDisGPT")
+    put_markdown('## FatDisGPT')
     put_text('The Devoloper is recomending after 2 answers restart the page, because 3+ on one session will be call bugs.')
     conversation = []
     while True:
