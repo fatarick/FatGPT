@@ -1,4 +1,4 @@
-# FatCisGPT
+# MecisGPT
 AI, that created by AI (ChatGPT)! (web client)
 
 # How to start stable Web Version?
