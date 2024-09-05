@@ -1,7 +1,7 @@
 # MecisGPT
 AI*, that created by AI (ChatGPT)! (web client)
 
-* - with ai i mean a shitty script that load openai's random model and then it asks him for prompt and prints it.
+* - with ai i mean a shitty script that was created buy **CHATGPT 3.5** that load openai's random model and then it asks him for prompt and prints it.
 
 # How to start stable Web Version?
 1.First change the #YOUR API KEY to your OpenAI API Key (you can get it here: https://platform.openai.com/account/api-keys)|
